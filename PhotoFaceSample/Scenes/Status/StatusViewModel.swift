@@ -68,7 +68,6 @@ class StatusViewModel {
     }
   }
   
-  
   func createSession() {
     worker.getSession(userAgent: helper.createUserAgentForNewSession(),
                       deviceKey: helper.faceTecDeviceKeyIdentifier) { [weak self] (response) in
@@ -81,11 +80,18 @@ class StatusViewModel {
         
         print("@! >>> Session: ", String(self.session!))
           
-        DispatchQueue.main.asyncAfter(deadline: .now() + 15) {
-          self.setupLiveness(faceScan: self.helper.getFaceScan,
-                             auditTrailImage: self.helper.getAuditTrailImage,
-                             lowQualityAuditTrailImage: self.helper.getLowQualityAuditTrailImage)
+        self.helper.waitingFaceTecResponse = {
+          
+          print("@! >>> Processamento finalizado.")
+          print("@! >>> Enviando foto para FaceTec...")
+          
+          DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+            self.setupLiveness(faceScan: self.helper.getFaceScan,
+                               auditTrailImage: self.helper.getAuditTrailImage,
+                               lowQualityAuditTrailImage: self.helper.getLowQualityAuditTrailImage)
+          }
         }
+        
         
       case .noConnection(let description):
         print("Server error timeOut: \(description) \n")
@@ -121,9 +127,7 @@ class StatusViewModel {
         print("@! >>> Liveness Code: \(code)")
         print("@! >>> Liveness Message: \(message)")
         
-        self.helper.waitingFaceTecResponse?()
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+        DispatchQueue.main.async {
           let statusVC = StatusViewController(viewModel: self)
           self.viewController?.navigationController?.pushViewController(statusVC, animated: true)
         }
@@ -152,14 +156,17 @@ extension StatusViewModel {
     case 0:
       break
     case 1:
+      self.timer?.invalidate()
       setApproved()
     case 2:
+      self.timer?.invalidate()
       setReproved()
     case 3:
       self.timer?.invalidate()
       dismissStatus?()
       break
     case 4:
+      self.timer?.invalidate()
       openDocumentCapture()
     default:
       break

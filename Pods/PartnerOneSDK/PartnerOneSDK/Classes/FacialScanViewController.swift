@@ -90,15 +90,13 @@ extension FacialScanViewController {
       
       self.faceTecLivenessData(completion: {})
       
-      if self.helper.wasProcessed == true {
-        print("@! >>> Foi processado!")
-      }
+      print("@! >>> Escaneamento facial feito. Fazendo checagem...")
       
       self.processorResponse = {
-        if self.resultCallback?.onFaceScanGoToNextStep(scanResultBlob: "") != nil {
-          print("BLOB!")
-        } else {
-          self.navigationController?.popViewController(animated: true)
+        self.helper.waitingFaceTecResponse?()
+        
+        if self.helper.wasProcessed == true {
+          print("@! >>> Foi processado!")
         }
       }
     })
@@ -152,8 +150,6 @@ extension FacialScanViewController {
     self.faceScanBase64 = faceScanBase
     
     completion()
-    
-    print("@! >>> Processamento finalizado.")
     
     let livenessProcessor = LivenessCheckProcessor(sessionToken: self.helper.createUserAgentForSession(),
                                                    fromViewController: self)

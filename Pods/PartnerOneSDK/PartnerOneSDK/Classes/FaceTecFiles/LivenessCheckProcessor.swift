@@ -33,7 +33,7 @@ open class LivenessCheckProcessor: NSObject, Processor, FaceTecFaceScanProcessor
         faceScanResultCallback.onFaceScanResultCancel()
         return
     }
-    
+
     self.helper.getFaceScan = sessionResult.faceScanBase64 ?? ""
     
     self.fromViewController.faceTecLivenessData(faceScanBase: sessionResult.faceScanBase64 ?? "",
@@ -46,8 +46,6 @@ open class LivenessCheckProcessor: NSObject, Processor, FaceTecFaceScanProcessor
         FaceTecCustomization.setOverrideResultScreenSuccessMessage("Liveness\nConfirmed")
       }
     }
-    
-    print("@! >>> Escaneamento facial feito. Fazendo checagem...")
     
     var parameters: [String : Any] = [:]
     parameters["transactionId"] = fromViewController.transactionId
