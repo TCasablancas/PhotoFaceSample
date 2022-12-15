@@ -156,13 +156,10 @@ extension StatusViewModel {
     case 0:
       break
     case 1:
-      self.timer?.invalidate()
       setApproved()
     case 2:
-      self.timer?.invalidate()
       setReproved()
     case 3:
-      self.timer?.invalidate()
       dismissStatus?()
       break
     case 4:
