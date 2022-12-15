@@ -90,7 +90,7 @@
 		E5EC111C9EB089D63E72B9CDBE40D616 /* MapError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0607523F29E921EF2DAAA930D7D1A3B /* MapError.swift */; };
 		EC88AD4E50072F052CC19505056B6009 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D16D327AFCC1293D62DA298E22C6C6A /* Response.swift */; };
 		EF0B58E3299DF1BDF6472D28D8659FB6 /* DocumentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE5B8F4115B313D43F4226473D2B76D /* DocumentModel.swift */; };
-		EFA0F486294AC2A200D8220B /* FaceTecSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA0F485294AC2A200D8220B /* FaceTecSDK.xcframework */; };
+		EF409220294B87AC00BCF525 /* FaceTecSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF40921F294B87AC00BCF525 /* FaceTecSDK.xcframework */; };
 		F3D40D60F7B6833A5B280B8930F79ED7 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351214B4D706966632EF24663097E396 /* ScanViewController.swift */; };
 		F5C92DC8E274C4FC541267A97575BC05 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15036C819DF0B9BA4901760A976003B6 /* ParameterEncoding.swift */; };
 		F93AEAF3659818E2308E0E5C70B66423 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EA9E066974638798FF2D9FFBD09E74 /* DispatchQueue+Alamofire.swift */; };
@@ -263,8 +263,8 @@
 		E9F521C718A3842D632871DB49F5C01B /* Pods-PhotoFaceSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhotoFaceSample-umbrella.h"; sourceTree = "<group>"; };
 		EAAD943649CB3557C756CCE392B2E519 /* Pods-PhotoFaceSample-PhotoFaceSampleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PhotoFaceSample-PhotoFaceSampleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EF321B290AE4D2E45FD2E2DD41D42271 /* CodableTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableTransform.swift; path = Sources/CodableTransform.swift; sourceTree = "<group>"; };
+		EF40921F294B87AC00BCF525 /* FaceTecSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FaceTecSDK.xcframework; path = "../../../../Downloads/FaceTecSDK-ios-9.4.25/FaceTecSDK.xcframework"; sourceTree = "<group>"; };
 		EF414903CE60CE23A0579C29A914F62F /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateTransform.swift; path = Sources/ISO8601DateTransform.swift; sourceTree = "<group>"; };
-		EFA0F485294AC2A200D8220B /* FaceTecSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FaceTecSDK.xcframework; path = "../../../../Downloads/FaceTecSDK-ios-9.6.7/FaceTecSDK.xcframework"; sourceTree = "<group>"; };
 		F172F2B076E9B0F78D13107D3B3AD847 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		F19CAAE79DA4AED9F63D41EE414C3B7E /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		F2E03EA2EAD3BEECC208BF4B4ED885B9 /* IntegerOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntegerOperators.swift; path = Sources/IntegerOperators.swift; sourceTree = "<group>"; };
@@ -306,7 +306,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFA0F486294AC2A200D8220B /* FaceTecSDK.xcframework in Frameworks */,
+				EF409220294B87AC00BCF525 /* FaceTecSDK.xcframework in Frameworks */,
 				24BA0482D19EE7FDFAE455085FB67B90 /* FaceTecSDK.framework in Frameworks */,
 				A27E85CBC66FF0674315EAC4E776CBD6 /* Foundation.framework in Frameworks */,
 			);
@@ -381,7 +381,7 @@
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EFA0F485294AC2A200D8220B /* FaceTecSDK.xcframework */,
+				EF40921F294B87AC00BCF525 /* FaceTecSDK.xcframework */,
 				C113A1B6789FF094537BD5211B183964 /* iOS */,
 			);
 			name = Frameworks;

@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   PartnerOneSDK:
-    :commit: ebeb06402244218b98eb02f5871b701da6ab9d73
+    :commit: 24914415cc03b3269b88a16c340013cf9d2da7a9
     :git: https://github.com/partneroneti/p1sdk.ios.git
 
 SPEC CHECKSUMS:
