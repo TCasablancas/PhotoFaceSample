@@ -6,7 +6,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.7)
   - ObjectMapper (~> 3.5)
-  - PartnerOneSDK (from `https://github.com/partneroneti/p1sdk.ios.git`, branch `main`)
+  - PartnerOneSDK (from `https://github.com/partneroneti/p1sdk.ios.git`, branch `fix/code-cleaning`)
 
 SPEC REPOS:
   trunk:
@@ -15,19 +15,19 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   PartnerOneSDK:
-    :branch: main
+    :branch: fix/code-cleaning
     :git: https://github.com/partneroneti/p1sdk.ios.git
 
 CHECKOUT OPTIONS:
   PartnerOneSDK:
-    :commit: 24914415cc03b3269b88a16c340013cf9d2da7a9
+    :commit: 12f23cb7f965d2f73c62576838bc19c46511df1a
     :git: https://github.com/partneroneti/p1sdk.ios.git
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
-  PartnerOneSDK: 3cda736d817e85daef32afccfb438d8323fd8e12
+  PartnerOneSDK: 10178fd68100c05d8997a703fbae253656d6f951
 
-PODFILE CHECKSUM: 3ef6c14b80635726fb11e9a52d8cff784b85c9fb
+PODFILE CHECKSUM: bfc87eca6b743b478a37dcdc9aaa75b2db70f028
 
 COCOAPODS: 1.11.3

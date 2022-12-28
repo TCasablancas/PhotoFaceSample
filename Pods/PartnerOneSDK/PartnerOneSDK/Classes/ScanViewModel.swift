@@ -50,12 +50,23 @@ open class ScanViewModel {
     }
   }
   
+  func setImageType(_ type: String) {
+      if sideTitle == setPhotoSide(.frontView) {
+          helper.setDocumentImageTypeFront(type)
+      } else {
+          helper.setDocumentImageTypeBack(type)
+      }
+  }
+  
+  func setImageSize(_ size: String) {
+    helper.getDocumentImageSize(size)
+  }
+  
   func sendPicture() {
     if helper.documentsImages.count == 2 {
       helper.sendDocumentPicture?()
-      print(helper.documentsImages.count)
-      print("@! >>> Enviando imagens dos documentos...")
       print("@! >>> Numero final de itens: \(helper.documentsImages.count)")
+      print("@! >>> Enviando imagens dos documentos...")
     }
   }
 }

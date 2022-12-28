@@ -23,14 +23,6 @@ final class FacialScanViewController: UIViewController, FaceTecFaceScanProcessor
   var transactionId: String?
   var processorResponse: (() -> Void)?
   
-  private let activity: UIActivityIndicatorView = {
-    let activity = UIActivityIndicatorView()
-    activity.style = .whiteLarge
-    activity.startAnimating()
-    activity.translatesAutoresizingMaskIntoConstraints = false
-    return activity
-  }()
-  
   //MARK: - init
   
   init(viewModel: ScanViewModel, helper: PartnerHelper) {
@@ -50,9 +42,6 @@ final class FacialScanViewController: UIViewController, FaceTecFaceScanProcessor
     
     navigationItem.hidesBackButton = true
     view.backgroundColor = .white
-    view.addSubview(activity)
-    activity.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-    activity.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -68,7 +57,7 @@ extension FacialScanViewController {
   func setupFaceTec() {
     self.transactionId = helper.transaction
     self.deviceKey = helper.faceTecDeviceKeyIdentifier
-    self.sessionId = helper.sessionToken()
+    self.sessionId = helper.sessionToken
     
     FaceTec.sdk.initializeInProductionMode(productionKeyText: Config.ProductionKeyText,
                                            deviceKeyIdentifier: Config.DeviceKeyIdentifier,
@@ -78,25 +67,18 @@ extension FacialScanViewController {
       guard let self = self else {
         return
       }
-      
+      ThemeHelpers.setAppTheme(theme: "")
       Config.displayLogs()
       
-      Config.ProductionKeyText = self.helper.faceTecProductionKeyText
-      Config.DeviceKeyIdentifier = self.helper.faceTecDeviceKeyIdentifier
-      Config.PublicFaceScanEncryptionKey = self.helper.faceTecPublicFaceScanEncryptionKey
-      
-      LivenessCheckProcessor(sessionToken: self.helper.createUserAgentForSession(),
-                             fromViewController: self)
-      
+      self.initializeProcessor()
       self.faceTecLivenessData(completion: {})
       
-      print("@! >>> Escaneamento facial feito. Fazendo checagem...")
-      
       self.processorResponse = {
-        self.helper.waitingFaceTecResponse?()
-        
-        if self.helper.wasProcessed == true {
-          print("@! >>> Foi processado!")
+        if self.resultCallback?.onFaceScanGoToNextStep(scanResultBlob: "") != nil {
+          print("BLOB!")
+          
+        } else {
+          self.navigationController?.popViewController(animated: true)
         }
       }
     })
@@ -108,7 +90,7 @@ extension FacialScanViewController {
   }
   
   func onFaceTecSDKCompletelyDone() {
-    print("Escaneamento Completo. Navegando para Status!")
+    print("@! >>> Escaneamento Completo. Navegando para Status!")
   }
   
   func onComplete() {
@@ -123,8 +105,8 @@ extension FacialScanViewController {
     latestSessionResult = sessionResult
   }
   
-  func initializeProcessor() -> Processor {
-    return LivenessCheckProcessor(sessionToken: helper.createUserAgentForSession(), fromViewController: self)
+  func initializeProcessor() -> LivenessCheckProcessor {
+    return LivenessCheckProcessor(sessionToken: helper.sessionToken, fromViewController: self)
   }
   
   public func createUserAgentForNewSession() -> String {
@@ -135,10 +117,6 @@ extension FacialScanViewController {
     return FaceTec.sdk.createFaceTecAPIUserAgentString(sessionId)
   }
   
-  public func getLowQualityAuditTrailImage() -> String {
-    return sessionResult?.lowQualityAuditTrailCompressedBase64![0] ?? ""
-  }
-  
   public func faceTecLivenessData(faceScanBase: String = "",
                                   auditTrailImage: String = "",
                                   lowQualityAuditTrailImage: String = "",
@@ -147,13 +125,17 @@ extension FacialScanViewController {
     self.helper.getAuditTrailImage = auditTrailImage
     self.helper.getLowQualityAuditTrailImage = lowQualityAuditTrailImage
     
-    self.faceScanBase64 = faceScanBase
-    
     completion()
     
-    let livenessProcessor = LivenessCheckProcessor(sessionToken: self.helper.createUserAgentForSession(),
-                                                   fromViewController: self)
-    livenessProcessor.success = true
-    livenessProcessor.faceScanResultCallback = resultCallback
+    PartnerHelper.livenessCallBack = { (faceScan, auditTrailImage, lowQualityAuditTrailImage) in
+      self.helper.getFaceScan = faceScan
+      self.helper.getAuditTrailImage = auditTrailImage
+      self.helper.getLowQualityAuditTrailImage = lowQualityAuditTrailImage
+    }
+    
+    print("@! >>> Processamento finalizado.")
+    
+    self.initializeProcessor().success = true
+    self.initializeProcessor().faceScanResultCallback = resultCallback
   }
 }

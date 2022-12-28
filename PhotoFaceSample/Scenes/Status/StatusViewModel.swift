@@ -79,19 +79,18 @@ class StatusViewModel {
         self.helper.sessionToken = model.objectReturn[0].session
         
         print("@! >>> Session: ", String(self.session!))
+        
+        PartnerHelper.livenessCallBack = { (faceScan, auditTrailImage, lowQualityAuditTrailImage) in
           
-        self.helper.waitingFaceTecResponse = {
-          
-          print("@! >>> Processamento finalizado.")
+          print("@! >>> Finalizando processamento.")
           print("@! >>> Enviando foto para FaceTec...")
           
-          DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            self.setupLiveness(faceScan: self.helper.getFaceScan,
-                               auditTrailImage: self.helper.getAuditTrailImage,
-                               lowQualityAuditTrailImage: self.helper.getLowQualityAuditTrailImage)
+          DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.setupLiveness(faceScan: faceScan,
+                               auditTrailImage: auditTrailImage,
+                               lowQualityAuditTrailImage: lowQualityAuditTrailImage)
           }
         }
-        
         
       case .noConnection(let description):
         print("Server error timeOut: \(description) \n")
@@ -127,9 +126,11 @@ class StatusViewModel {
         print("@! >>> Liveness Code: \(code)")
         print("@! >>> Liveness Message: \(message)")
         
-        DispatchQueue.main.async {
-          let statusVC = StatusViewController(viewModel: self)
-          self.viewController?.navigationController?.pushViewController(statusVC, animated: true)
+        self.helper.navigateToStatus = {
+          DispatchQueue.main.async {
+            let statusVC = StatusViewController(viewModel: self)
+            self.viewController?.navigationController?.pushViewController(statusVC, animated: true)
+          }
         }
       case .noConnection(let description):
         print("Server error timeOut: \(description) \n")

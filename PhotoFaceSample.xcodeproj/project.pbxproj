@@ -17,14 +17,14 @@
 		EF2400D8293C026E002A9746 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2400D7293C026E002A9746 /* ErrorResponse.swift */; };
 		EF2400DA293C07E3002A9746 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2400D9293C07E3002A9746 /* DataParser.swift */; };
 		EF2400E1293C1F68002A9746 /* ObjectReturnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2400E0293C1F68002A9746 /* ObjectReturnModel.swift */; };
-		EF5BFD1429404AD400F1955E /* FaceTecSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5BFD1229404AD100F1955E /* FaceTecSDK.xcframework */; };
-		EF5BFD1529404AD400F1955E /* FaceTecSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF5BFD1229404AD100F1955E /* FaceTecSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EF5BFD1729404D3A00F1955E /* FaceTec.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF5BFD1629404D3A00F1955E /* FaceTec.strings */; };
 		EF5BFD872941761B00F1955E /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BFD862941761B00F1955E /* TransactionModel.swift */; };
 		EF5BFD89294176D500F1955E /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BFD88294176D500F1955E /* ErrorModel.swift */; };
 		EF9202D32942A2D000302029 /* FaceTecDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9202D22942A2D000302029 /* FaceTecDataModel.swift */; };
 		EF9202DB2942BF0E00302029 /* SessionIDModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9202DA2942BF0E00302029 /* SessionIDModel.swift */; };
 		EF9202E72944B3BC00302029 /* MainResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9202E62944B3BC00302029 /* MainResponseModel.swift */; };
+		EFB2D3D5295BD64100A36967 /* FaceTecSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB2D3D2295BD5D100A36967 /* FaceTecSDK.xcframework */; };
+		EFB2D3D6295BD64100A36967 /* FaceTecSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFB2D3D2295BD5D100A36967 /* FaceTecSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFB7A082293A0C5000C5DFA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB7A081293A0C5000C5DFA9 /* AppDelegate.swift */; };
 		EFB7A084293A0C5000C5DFA9 /* DocumentBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB7A083293A0C5000C5DFA9 /* DocumentBrowserViewController.swift */; };
 		EFB7A086293A0C5000C5DFA9 /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB7A085293A0C5000C5DFA9 /* DocumentViewController.swift */; };
@@ -83,7 +83,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EF5BFD1529404AD400F1955E /* FaceTecSDK.xcframework in Embed Frameworks */,
+				EFB2D3D6295BD64100A36967 /* FaceTecSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,13 +107,13 @@
 		EF2400D7293C026E002A9746 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		EF2400D9293C07E3002A9746 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
 		EF2400E0293C1F68002A9746 /* ObjectReturnModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectReturnModel.swift; sourceTree = "<group>"; };
-		EF5BFD1229404AD100F1955E /* FaceTecSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FaceTecSDK.xcframework; sourceTree = "<group>"; };
 		EF5BFD1629404D3A00F1955E /* FaceTec.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = FaceTec.strings; sourceTree = "<group>"; };
 		EF5BFD862941761B00F1955E /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		EF5BFD88294176D500F1955E /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		EF9202D22942A2D000302029 /* FaceTecDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTecDataModel.swift; sourceTree = "<group>"; };
 		EF9202DA2942BF0E00302029 /* SessionIDModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionIDModel.swift; sourceTree = "<group>"; };
 		EF9202E62944B3BC00302029 /* MainResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainResponseModel.swift; sourceTree = "<group>"; };
+		EFB2D3D2295BD5D100A36967 /* FaceTecSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FaceTecSDK.xcframework; path = "../../../Downloads/FaceTecSDK-ios-9.4.25/FaceTecSDK.xcframework"; sourceTree = "<group>"; };
 		EFB7A07E293A0C5000C5DFA9 /* PhotoFaceSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoFaceSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB7A081293A0C5000C5DFA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFB7A083293A0C5000C5DFA9 /* DocumentBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentBrowserViewController.swift; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF5BFD1429404AD400F1955E /* FaceTecSDK.xcframework in Frameworks */,
+				EFB2D3D5295BD64100A36967 /* FaceTecSDK.xcframework in Frameworks */,
 				FEAF551555F1478CABBCE107 /* Pods_PhotoFaceSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,7 +224,7 @@
 		EFB7A075293A0C5000C5DFA9 = {
 			isa = PBXGroup;
 			children = (
-				EF5BFD1229404AD100F1955E /* FaceTecSDK.xcframework */,
+				EFB2D3D2295BD5D100A36967 /* FaceTecSDK.xcframework */,
 				EFB7A080293A0C5000C5DFA9 /* PhotoFaceSample */,
 				EFB7A099293A0C5200C5DFA9 /* PhotoFaceSampleTests */,
 				EFB7A0A3293A0C5200C5DFA9 /* PhotoFaceSampleUITests */,

@@ -19,6 +19,5 @@
     "ios": "10.0"
   },
   "source_files": "PartnerOneSDK/Classes/**/*",
-  "public_header_files": "Pods/Classes/**/*.h",
-  "frameworks": "FaceTecSDK"
+  "public_header_files": "Pods/Classes/**/*.h"
 }
