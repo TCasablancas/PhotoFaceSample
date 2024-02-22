@@ -357,8 +357,8 @@ extension LoginViewModel {
         }
         
         self.partnerManager.navigateToStatus = {
-//            self.openStatus()
-//            print("Navegando para tela de Status...")
+            self.openStatus()
+            print("Navegando para tela de Status...")
         }
     })
   }

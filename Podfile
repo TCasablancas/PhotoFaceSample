@@ -6,10 +6,10 @@ target 'PhotoFaceSample' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   
-#  pod 'PartnerOneSDK', :path => "../PartnerOneSDK"
+  #pod 'PartnerOneSDK', :path => "../p1sdk.ios"
   pod 'Alamofire', '~> 4.7'
   pod 'ObjectMapper', '~> 3.5'
-  pod 'PartnerOneSDK', :git => "https://github.com/partneroneti/p1sdk.ios.git", :branch => 'development'
+#  pod 'PartnerOneSDK', :git => "https://github.com/partneroneti/p1sdk.ios.git", :branch => 'bugfix/200823'
 
   # Pods for PhotoFaceSample
 
@@ -29,6 +29,7 @@ post_install do |installer|
         target.build_configurations.each do |config|
             config.build_settings['SWIFT_VERSION'] = '4.0'
             config.build_settings['CODE_SIGNING_ALLOWED'] = 'NO'
+            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '10.0'
         end
     end
 end

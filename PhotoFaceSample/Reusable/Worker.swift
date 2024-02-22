@@ -25,6 +25,7 @@ class PhotoFaceWorker: Request, PhotoFaceWorkerProtocol, AccessTokeProtocol {
   
   let network = DataParser()
   var apiURL: String = "https://integracao-sodexo-homologacao.partner1.com.br/api"
+//  var apiURL: String = "https://integracao-sodexo.partner1.com.br/api"
   let webhookURL: String = "https://webhook.site/a06873e0-57ff-49b2-8205-59fb18b5ca4c"
   
   var accessToken: String
@@ -38,12 +39,26 @@ class PhotoFaceWorker: Request, PhotoFaceWorkerProtocol, AccessTokeProtocol {
     guard let url = URL(string: "\(apiURL)/authentication") else {
       return
     }
+       
+      
+
+//    let body: [String:Any] = [
+//      "username": "SODEXO.HMG",
+//      "password": "ifnEQrBy",
+//      "grant_type": "password"
+//    ]
+      
+      let body: [String:Any] = [
+        "username": "SODEXO.B2M",
+        "password": "MI0tQfQt",
+        "grant_type": "password"
+      ]
     
-    let body: [String:Any] = [
-      "username": "HMG.IOS",
-      "password": "eQtlC7BM",
-      "grant_type": "password"
-    ]
+//      let body: [String:Any] = [
+//        "username": "SODEXO",
+//        "password": "8VXow3ocmY8D17Cd",
+//        "grant_type": "password"
+//      ]
     
     network.mainParser(url: url, body: body, method: .post, completion: completion)
   }
@@ -81,6 +96,7 @@ class PhotoFaceWorker: Request, PhotoFaceWorkerProtocol, AccessTokeProtocol {
                             documents: [String:Any],
                             completion: @escaping ((Response<ResponseModel<DocumentDataModel>>) -> Void)) {
     guard let url = URL(string: "\(apiURL )/document") else {
+//      guard let url = URL(string: "https://webhook.site/6ba2afac-f729-4e69-b3d8-056143dd1891/document") else {
       return
     }
     

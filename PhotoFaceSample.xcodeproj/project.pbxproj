@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		087B62518B3A40826B4FF7BD /* Pods_PhotoFaceSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0D58F04E5B7EEEE5EC9409 /* Pods_PhotoFaceSampleTests.framework */; };
+		437CA7902B852D2C0010B6F9 /* PartnerOneSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 437CA78F2B852D2C0010B6F9 /* PartnerOneSDK */; };
 		43E2B324294BB401009F86D0 /* Pods_PhotoFaceSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD59D6BB97CB741354D4115F /* Pods_PhotoFaceSample.framework */; };
 		C2BC6C1ECFD1A80BCA3BB4A3 /* Pods_PhotoFaceSample_PhotoFaceSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C38804F8F4D339AE554D8AD /* Pods_PhotoFaceSample_PhotoFaceSampleUITests.framework */; };
 		EF08860129425EF6001E8EB4 /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF08860029425EF6001E8EB4 /* ResultModel.swift */; };
@@ -18,7 +19,6 @@
 		EF2400D8293C026E002A9746 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2400D7293C026E002A9746 /* ErrorResponse.swift */; };
 		EF2400DA293C07E3002A9746 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2400D9293C07E3002A9746 /* DataParser.swift */; };
 		EF2400E1293C1F68002A9746 /* ObjectReturnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2400E0293C1F68002A9746 /* ObjectReturnModel.swift */; };
-		EF5BFD1729404D3A00F1955E /* FaceTec.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF5BFD1629404D3A00F1955E /* FaceTec.strings */; };
 		EF5BFD872941761B00F1955E /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BFD862941761B00F1955E /* TransactionModel.swift */; };
 		EF5BFD89294176D500F1955E /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BFD88294176D500F1955E /* ErrorModel.swift */; };
 		EF9202D32942A2D000302029 /* FaceTecDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9202D22942A2D000302029 /* FaceTecDataModel.swift */; };
@@ -104,7 +104,6 @@
 		EF2400D7293C026E002A9746 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		EF2400D9293C07E3002A9746 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
 		EF2400E0293C1F68002A9746 /* ObjectReturnModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectReturnModel.swift; sourceTree = "<group>"; };
-		EF5BFD1629404D3A00F1955E /* FaceTec.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = FaceTec.strings; sourceTree = "<group>"; };
 		EF5BFD862941761B00F1955E /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		EF5BFD88294176D500F1955E /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		EF9202D22942A2D000302029 /* FaceTecDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTecDataModel.swift; sourceTree = "<group>"; };
@@ -154,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43E2B324294BB401009F86D0 /* Pods_PhotoFaceSample.framework in Frameworks */,
+				437CA7902B852D2C0010B6F9 /* PartnerOneSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +246,6 @@
 				EFB7A0D1293A2D2600C5DFA9 /* Networking */,
 				EF2400DD293C1BB5002A9746 /* Models */,
 				EFB7A0B4293A0C9D00C5DFA9 /* Scenes */,
-				EF5BFD1629404D3A00F1955E /* FaceTec.strings */,
 				EFB7A08C293A0C5200C5DFA9 /* Assets.xcassets */,
 				EFB7A091293A0C5200C5DFA9 /* Info.plist */,
 			);
@@ -379,6 +378,9 @@
 			dependencies = (
 			);
 			name = PhotoFaceSample;
+			packageProductDependencies = (
+				437CA78F2B852D2C0010B6F9 /* PartnerOneSDK */,
+			);
 			productName = PhotoFaceSample;
 			productReference = EFB7A07E293A0C5000C5DFA9 /* PhotoFaceSample.app */;
 			productType = "com.apple.product-type.application";
@@ -454,6 +456,9 @@
 				Base,
 			);
 			mainGroup = EFB7A075293A0C5000C5DFA9;
+			packageReferences = (
+				437CA78E2B852D2C0010B6F9 /* XCRemoteSwiftPackageReference "p1sdk.ios" */,
+			);
 			productRefGroup = EFB7A07F293A0C5000C5DFA9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -472,7 +477,6 @@
 			files = (
 				EFB7A090293A0C5200C5DFA9 /* LaunchScreen.storyboard in Resources */,
 				EFB7A08D293A0C5200C5DFA9 /* Assets.xcassets in Resources */,
-				EF5BFD1729404D3A00F1955E /* FaceTec.strings in Resources */,
 				EFB7A08B293A0C5000C5DFA9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -744,7 +748,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -798,7 +802,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -817,7 +821,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q5USB59WHS;
+				DEVELOPMENT_TEAM = 93Z4LTM66K;
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -832,13 +836,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.partner1A.PhotoFaceSample;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.partner1.PhotoFaceSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -856,7 +860,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q5USB59WHS;
+				DEVELOPMENT_TEAM = 93Z4LTM66K;
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -871,13 +875,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.partner1A.PhotoFaceSample;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.partner1.PhotoFaceSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1002,6 +1006,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		437CA78E2B852D2C0010B6F9 /* XCRemoteSwiftPackageReference "p1sdk.ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/partneroneti/p1sdk.ios.app";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		437CA78F2B852D2C0010B6F9 /* PartnerOneSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 437CA78E2B852D2C0010B6F9 /* XCRemoteSwiftPackageReference "p1sdk.ios" */;
+			productName = PartnerOneSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EFB7A076293A0C5000C5DFA9 /* Project object */;
 }

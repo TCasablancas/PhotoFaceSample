@@ -1,6 +1,0 @@
-framework module PartnerOneSDK {
-  umbrella header "PartnerOneSDK-umbrella.h"
-
-  export *
-  module * { export * }
-}

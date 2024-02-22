@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "PhotoFaceWorker.getTransactionID(transactionID:completion:):Worker.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "accessToken">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "static ThemeHelpers.getCustomizationForTheme(theme:):ThemeHelpers.swift">
          <PersistentStrings>
             <PersistentString
@@ -14,19 +22,32 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "LivenessCheckProcessor.processSessionWhileFaceTecSDKWaits(sessionResult:faceScanResultCallback:):LivenessCheckProcessor.swift">
+         contextName = "LoginViewModel.openFaceCapture():LoginViewModel.swift">
          <PersistentStrings>
-            <PersistentString
-               value = "">
-            </PersistentString>
             <PersistentString
                value = "PartnerHelper.livenessCallBack">
             </PersistentString>
             <PersistentString
-               value = "self.helper.faceScan">
+               value = "UIImage(named: &quot;FaceTec_ideal_1.png&quot;)">
             </PersistentString>
             <PersistentString
-               value = "self.helper.livenessCallBack">
+               value = "UIImage.init(named: &quot;FaceTec_ideal_1&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ScanViewModel.sendPicture():ScanViewModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "sideTitle">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LivenessCheckProcessor.processSessionWhileFaceTecSDKWaits(sessionResult:faceScanResultCallback:):LivenessCheckProcessor.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "">
             </PersistentString>
             <PersistentString
                value = "sessionResult.auditTrailCompressedBase64?[0] ">
@@ -37,19 +58,14 @@
             <PersistentString
                value = "sessionResult.lowQualityAuditTrailCompressedBase64">
             </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "LoginViewModel.openFaceCapture():LoginViewModel.swift">
-         <PersistentStrings>
             <PersistentString
                value = "PartnerHelper.livenessCallBack">
             </PersistentString>
             <PersistentString
-               value = "UIImage.init(named: &quot;FaceTec_ideal_1&quot;)">
+               value = "self.helper.faceScan">
             </PersistentString>
             <PersistentString
-               value = "UIImage(named: &quot;FaceTec_ideal_1.png&quot;)">
+               value = "self.helper.livenessCallBack">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -65,18 +81,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "PhotoFaceWorker.getTransactionID(transactionID:completion:):Worker.swift">
+         contextName = "ScanViewController.photoOutput(_:didFinishProcessingPhoto:error:):ScanViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "accessToken">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "ScanViewModel.sendPicture():ScanViewModel.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "sideTitle">
+               value = "self.convertImageToBase64String(img:croppedImage)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

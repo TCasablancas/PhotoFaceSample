@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "p1sdk.ios.app",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/partneroneti/p1sdk.ios.app",
+      "state" : {
+        "branch" : "main",
+        "revision" : "0bf6c0a0885e9b4b575bdbf9120a03832b821f97"
+      }
+    }
+  ],
+  "version" : 2
+}
