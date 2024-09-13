@@ -1,4 +1,5 @@
 {
+  "originHash" : "1f32930536b80cf830f115a3c19acf9f8bf3fd358832a26b531a2d29aba75221",
   "pins" : [
     {
       "identity" : "p1sdk.ios.app",
@@ -10,5 +11,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

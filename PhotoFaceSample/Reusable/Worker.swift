@@ -42,17 +42,17 @@ class PhotoFaceWorker: Request, PhotoFaceWorkerProtocol, AccessTokeProtocol {
        
       
 
-//    let body: [String:Any] = [
-//      "username": "SODEXO.HMG",
-//      "password": "ifnEQrBy",
-//      "grant_type": "password"
-//    ]
+    let body: [String:Any] = [
+      "username": "SODEXO.HMG",
+      "password": "ifnEQrBy",
+      "grant_type": "password"
+    ]
       
-      let body: [String:Any] = [
-        "username": "SODEXO.B2M",
-        "password": "MI0tQfQt",
-        "grant_type": "password"
-      ]
+//      let body: [String:Any] = [
+//        "username": "SODEXO.B2M",
+//        "password": "MI0tQfQt",
+//        "grant_type": "password"
+//      ]
     
 //      let body: [String:Any] = [
 //        "username": "SODEXO",

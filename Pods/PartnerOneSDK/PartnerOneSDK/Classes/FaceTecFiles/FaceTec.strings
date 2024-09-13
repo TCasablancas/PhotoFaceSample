@@ -1,0 +1,104 @@
+//
+// This is a generated file.  Do not manually edit this and commit changes.
+//
+
+"FaceTec_accessibility_cancel_button" = "Cancelar";
+"FaceTec_accessibility_torch_button" = "Alternar luz";
+
+"FaceTec_action_ok" = "OK";
+"FaceTec_action_im_ready" = "Estou pronto";
+"FaceTec_action_try_again" = "Tente novamente";
+"FaceTec_action_continue" = "Continuar";
+"FaceTec_action_take_photo" = "Tirar foto";
+"FaceTec_action_retake_photo" = "Retomar";
+"FaceTec_action_accept_photo" = "Aceitar";
+"FaceTec_action_confirm" = "CONFIRMAR INFORMAÇÕES";
+"FaceTec_action_scan_nfc" = "SCAN ePASSPORT";
+"FaceTec_action_scan_nfc_card" = "SCAN ID CARD";
+"FaceTec_action_skip_nfc" = "PULE ESTA ETAPA";
+
+"FaceTec_camera_permission_header" = "Ativar câmera";
+"FaceTec_camera_permission_message_enroll" = "Por favor, clique no botão abaixo para ativar sua câmera selfie.";
+"FaceTec_camera_permission_message_auth" = "Sua câmera está desativada. Toque abaixo para editar suas configurações.";
+"FaceTec_camera_permission_enable_camera" = "HABILITAR CÂMERA";
+"FaceTec_camera_permission_launch_settings" = "CONFIGURAÇÕES DE LANÇAMENTO";
+
+"FaceTec_feedback_center_face" = "Centralize seu rosto";
+"FaceTec_feedback_face_not_found" = "Coloque o rosto no circulo";
+"FaceTec_feedback_face_not_looking_straight_ahead" = "Olhe para frente";
+"FaceTec_feedback_face_not_upright" = "Mantenha a cabeça reta";
+"FaceTec_feedback_hold_steady" = "Mantenha firme";
+"FaceTec_feedback_move_phone_away" = "Afastar";
+"FaceTec_feedback_move_phone_closer" = "Aproxime seu rosto";
+"FaceTec_feedback_move_phone_to_eye_level" = "Mover a câmera para o nível dos olhos";
+"FaceTec_feedback_use_even_lighting" = "Iluminar o rosto de forma mais uniforme";
+
+"FaceTec_idscan_type_selection_header" = "Prepare para digitalizar\nSeu documento de identificação";
+"FaceTec_idscan_capture_tap_to_focus_message" = "Toque na tela para focar";
+"FaceTec_idscan_capture_hold_steady_message" = "Por favor, mantenha estável";
+"FaceTec_idscan_capture_id_front_instruction_message" = "Mostrar frente do ID";
+"FaceTec_idscan_capture_id_back_instruction_message" = "Mostrar o verso do ID";
+"FaceTec_idscan_review_id_front_instruction_message" = "Confirmar que a foto está limpa e Legível";
+"FaceTec_idscan_review_id_back_instruction_message" = "Confirmar que a foto está limpa e Legível";
+"FaceTec_idscan_ocr_confirmation_main_header" = "Revisar e Confirmar";
+"FaceTec_idscan_ocr_confirmation_scroll_message" = "Rolar para baixo";
+"FaceTec_idscan_nfc_status_disabled_message" = "Ative o NFC\nNas configurações do seu dispositivo\nPara continuar";
+"FaceTec_idscan_nfc_status_ready_message" = "Prepare-se para escanear\seu chip de passaporte";
+"FaceTec_idscan_nfc_card_status_ready_message" = "Prepare-se para escanear\Seu chip de cartão de identificação";
+"FaceTec_idscan_nfc_status_starting_message" = "Segure o telefone para trás\Capa do passaporte\para escanear o chip NFC";
+"FaceTec_idscan_nfc_card_status_starting_message" = "Segure o telefone no cartão de identificação\npara escanear o chip NFC";
+"FaceTec_idscan_nfc_status_scanning_message" = "Segure firme,\nDigitalizando o chip NFC";
+"FaceTec_idscan_nfc_status_weak_connection_message" = "Vamos Tentar\nOutra Varredura";
+"FaceTec_idscan_nfc_status_finished_with_success_message" = "Digitalização de documento\incompleta";
+"FaceTec_idscan_nfc_status_finished_with_error_message" = "Chip do ePassport\nIlegível";
+"FaceTec_idscan_nfc_card_status_finished_with_error_message" = "Chip do Cartão de Identificação\nIlegível";
+"FaceTec_idscan_nfc_status_skipped_message" = "Escaneamento NFC\nIgnorado";
+"FaceTec_idscan_additional_review_message" = "Revisão Adicional\nNecessária";
+
+"FaceTec_initializing_camera" = "Inicializando camera segura";
+
+"FaceTec_instructions_header_ready_1" = "Vamos lá! Prepare-se para";
+"FaceTec_instructions_header_ready_2" = "para começar.";
+"FaceTec_instructions_message_ready_1" = "Procure um local iluminado, retire";
+"FaceTec_instructions_message_ready_2" = "óculos, bonés e acessórios.";
+
+"FaceTec_presession_frame_your_face" = "Centralizar seu rosto";
+"FaceTec_presession_position_face_straight_in_oval" = "Coloque o rosto no circulo";
+"FaceTec_presession_hold_steady_3" = "Segure por: 3";
+"FaceTec_presession_hold_steady_2" = "Segure por: 2";
+"FaceTec_presession_hold_steady_1" = "Segure por: 1";
+"FaceTec_presession_eyes_straight_ahead" = "Olhe para a frente";
+"FaceTec_presession_remove_dark_glasses" = "Remova os óculos escuros";
+"FaceTec_presession_neutral_expression" = "Expressão neutra, sem sorriso";
+"FaceTec_presession_conditions_too_bright" = "O ambiente está muito claro";
+"FaceTec_presession_brighten_your_environment" = "Ilumine seu ambiente";
+
+"FaceTec_result_facescan_upload_message" = "Processando..";
+"FaceTec_result_success_message" = "Sucesso";
+"FaceTec_result_idscan_upload_message" = "Carregando\nCriptografado\nDigitalização";
+"FaceTec_result_nfc_upload_message" = "Carregando\nCriptografado\nDetalhes NFC";
+"FaceTec_result_idscan_unsuccess_message" = "Foto de identificação\nNão correspondeu\nRosto do usuário";
+"FaceTec_result_idscan_success_front_side_message" = "Sua Face 3D\nCombinou com sua ID";
+"FaceTec_result_idscan_success_front_side_back_next_message" = "Sua Face 3D\nCombinou com sua ID";
+"FaceTec_result_idscan_success_front_side_nfc_next_message" = "Verso do ID capturado";
+"FaceTec_result_idscan_success_back_side_message" = "Verificação de ID\nCompleta";
+"FaceTec_result_idscan_success_back_side_nfc_next_message" = "Verso do ID\nDigitalizado";
+"FaceTec_result_idscan_success_passport_message" = "Verificação de passaporte concluída";
+"FaceTec_result_idscan_success_passport_nfc_next_message" = "Passaporte digitalizado";
+"FaceTec_result_idscan_success_user_confirmation_message" = "Digitalização de identificação com foto\inComplete";
+"FaceTec_result_idscan_success_nfc_message" = "Verificação de identidade concluída";
+"FaceTec_result_idscan_success_additional_review_message" = "Captura de foto de identificação\nConcluída";
+"FaceTec_result_idscan_skip_or_error_nfc_message" = "Detalhes do ID\nCarregado";
+"FaceTec_result_idscan_retry_face_did_not_match_message" = "O rosto não combinava\nmuito bem";
+"FaceTec_result_idscan_retry_id_not_fully_visible_message" = "Documento de identificação\não totalmente visível";
+"FaceTec_result_idscan_retry_ocr_results_not_good_enough_message" = "Texto de identificação não legível";
+"FaceTec_result_idscan_retry_id_type_not_supported_message" = "Tipo de ID não suportado\nUse um ID diferente";
+"FaceTec_result_idscan_retry_barcode_not_read_message" = "Falha ao digitalizar o código de barras\nTente novamente";
+
+"FaceTec_retry_header" = "Vamos tentar de novo";
+"FaceTec_retry_subheader_message" = "Precisamos de uma selfie nítida";
+"FaceTec_retry_instruction_message_1" = "Expressão neutra, sem sorriso";
+"FaceTec_retry_instruction_message_2" = "Sem brilho ou iluminação extrema";
+"FaceTec_retry_instruction_message_3" = "Muito embaçada, limpe sua câmera";
+"FaceTec_retry_your_image_label" = "Sua Selfie";
+"FaceTec_retry_ideal_image_label" = "Pose Ideal";

@@ -1,20 +1,33 @@
 PODS:
   - Alamofire (4.9.1)
   - ObjectMapper (3.5.3)
+  - PartnerOneSDK (0.1.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
   - ObjectMapper (~> 3.5)
+  - PartnerOneSDK (from `https://github.com/partneroneti/p1sdk.ios.git`, branch `main`)
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - ObjectMapper
 
+EXTERNAL SOURCES:
+  PartnerOneSDK:
+    :branch: main
+    :git: https://github.com/partneroneti/p1sdk.ios.git
+
+CHECKOUT OPTIONS:
+  PartnerOneSDK:
+    :commit: d6aab59c713661fa6fc85d248972a3c10d06af93
+    :git: https://github.com/partneroneti/p1sdk.ios.git
+
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  PartnerOneSDK: a1cb0791396edb36814cdac532862499c7615026
 
-PODFILE CHECKSUM: 49c9b214794ba8e1a388b546151c6b33fe259bd4
+PODFILE CHECKSUM: 0010a3840c970dadbf7bbcdf3956a5866da9ebe0
 
 COCOAPODS: 1.12.1

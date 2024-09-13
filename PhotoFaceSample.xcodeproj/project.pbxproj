@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		087B62518B3A40826B4FF7BD /* Pods_PhotoFaceSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0D58F04E5B7EEEE5EC9409 /* Pods_PhotoFaceSampleTests.framework */; };
-		437CA7902B852D2C0010B6F9 /* PartnerOneSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 437CA78F2B852D2C0010B6F9 /* PartnerOneSDK */; };
 		43E2B324294BB401009F86D0 /* Pods_PhotoFaceSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD59D6BB97CB741354D4115F /* Pods_PhotoFaceSample.framework */; };
 		C2BC6C1ECFD1A80BCA3BB4A3 /* Pods_PhotoFaceSample_PhotoFaceSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C38804F8F4D339AE554D8AD /* Pods_PhotoFaceSample_PhotoFaceSampleUITests.framework */; };
 		EF08860129425EF6001E8EB4 /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF08860029425EF6001E8EB4 /* ResultModel.swift */; };
@@ -153,7 +152,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				43E2B324294BB401009F86D0 /* Pods_PhotoFaceSample.framework in Frameworks */,
-				437CA7902B852D2C0010B6F9 /* PartnerOneSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +377,6 @@
 			);
 			name = PhotoFaceSample;
 			packageProductDependencies = (
-				437CA78F2B852D2C0010B6F9 /* PartnerOneSDK */,
 			);
 			productName = PhotoFaceSample;
 			productReference = EFB7A07E293A0C5000C5DFA9 /* PhotoFaceSample.app */;
@@ -1017,14 +1014,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		437CA78F2B852D2C0010B6F9 /* PartnerOneSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 437CA78E2B852D2C0010B6F9 /* XCRemoteSwiftPackageReference "p1sdk.ios" */;
-			productName = PartnerOneSDK;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EFB7A076293A0C5000C5DFA9 /* Project object */;
 }
